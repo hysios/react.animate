@@ -6,7 +6,7 @@
     );
   } else if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['react', 'ease'], factory);
+    define(['react', 'ease-component'], factory);
   } else {
     // Browser globals
     root.amdWeb = factory(root.React, root.Ease);
